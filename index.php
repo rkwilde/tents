@@ -14,14 +14,14 @@
         }*/
         .debug-border{ border: 1px solid green; }
         .background-pic1{
-            background-image: url("working_files/weddingtent3.jpg");
+            background-image: url("weddingtent3.jpg");
             background-position: center top;
             background-repeat: no-repeat;
             background-color: black;
             background-attachment: fixed;
         } /*.height-pic1{ height: 740px }*/
         .background-pic2{
-            background-image: url("working_files/weddingtent3.jpg");
+            background-image: url("weddingtent3.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-color: black;
@@ -104,7 +104,7 @@
                 <div class="col-1 align-self-end pb-2 text-center font-topmenu">about</div>
                 <div class="col-1 align-self-end pb-2 text-center font-topmenu">products</div>
                 <div class="col-2">
-                    <img src="working_files/logo_white.png" class="img-fluid">
+                    <img src="logo_white.png" class="img-fluid">
                 </div>
                 <div class="col-1 align-self-end pb-2 text-center font-topmenu">maintenance</div>
                 <div class="col-1 align-self-end pb-2 text-center font-topmenu">contact</div>
