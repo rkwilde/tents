@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $hasPage ? "$pageName" : "" ?></title>
     <link rel="stylesheet" href="resources/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     
     <!-- fonts -->
@@ -21,14 +22,20 @@
 </head>
 
 <body>
-    <!-- # MENU (fixed to top) -->
-    <div class="container-fluid sm-position-fixed z2000 color-grey1-bg align-right-text">
+    <!-- # MENU -->
+    <div class="container-fluid z2000 color-grey1-bg align-right-text clearfix">
         <!-- ## LOGO -->
         <div class="float-left margin-left-big1 padding-topbottom1">
             <a href=""><img src="images/logo_small.png"></a>
         </div>
         <!-- ## MENU ITEMS -->
-        <div class="font-1 font-size-bigger1">
+        <div id="menuItems" class="font-1 font-size-bigger1">
+            <!-- hamburger -->
+            <a href="javascript:void(0)" onclick="menuClickHamburger()" 
+                    class="display-none menu-border1 menu-margin1 menu-margin2 
+                        menu-padding-tb1 menu-padding-l1 menu-padding-r1">
+                <i class="fa fa-bars"></i>
+            </a>
             <!-- ### HOME -->
             <a href="index.php?page=home" class="display-inline-block menu-border1 menu-margin1 menu-margin2 
                     menu-padding-tb1 menu-padding-l1 menu-padding-r1 menu-color-active">
@@ -63,7 +70,7 @@
                     menu-padding-tb1 menu-padding-l1 menu-padding-r1 menu-color1">Pricing</a>
             <!-- ### CONTACT -->
             <a href="index.php?page=contact" 
-                    class="button1 display-inline-block menu-padding-tb1 menu-padding-l1 menu-padding-r1"
+                    class="button1 display-inline-block menu-margin1 menu-padding-tb1 menu-padding-l1 menu-padding-r1"
                     onclick="location.href='index.php?page=contact'">
                 Contact Us
             </a>

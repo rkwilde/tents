@@ -26,6 +26,7 @@ body, html{
 a:active,a:focus{
     outline: 0;
 }
+
 .debug-border{ border: 1px solid green; }
 .align-center-text{
     text-align:center;
@@ -84,6 +85,11 @@ a:active,a:focus{
 }
 .capitalize{
     text-transform: uppercase;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 .color-gold1-stroke{
     stroke: #af9453;
@@ -229,7 +235,8 @@ a:active,a:focus{
     background-color: #a17d9e; /*light purple*/
 }
 .menu-margin1{
-    margin-top: 0.75em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .menu-margin2{
     margin-right: 0.5em;
@@ -246,6 +253,9 @@ a:active,a:focus{
 }
 .overflow-auto{
     overflow: auto;
+}
+.overflow-visible {
+    overflow: visible;
 }
 .padding-top-menu{
     padding-top: 100px;
@@ -280,3 +290,66 @@ a:active,a:focus{
     z-index: 2000;
 }
 
+@media screen and (max-width: 1200px) {
+    .font-2 { font-size: 1em; }
+    .font-3 { font-size: 1em; }
+    .font-size-bigger1{ font-size: 1em; }
+    .font-size-bigger2{ font-size: 1em; }
+    .font-size-bigger3{ font-size: 1.3em; }
+    .font-size-bigger4{ font-size: 1em; }
+    .font-size-bigger5{ font-size: 1.3em; }
+}
+
+@media screen and (max-width:768px) {
+    #menuItems a, #menuItems div {
+        display: none;
+    }
+    #menuItems a:first-child {
+        display: inline-block;
+        border: none;
+    }
+    #menuItems a:first-child i {
+        font-size: 40px;
+        color: #72246c; /* purple */
+    }
+    .margin-left-big1 {
+        margin-left: 20px;
+    }
+    .background-pic1{
+        /*background-image: url("images/tent_in_field.jpg");*/
+        height: 200px;
+        /*background-position: bottom center;*/
+        /*background-repeat: no-repeat;*/
+        /*background-color: #72246c; */
+        /*background-size: cover;*/
+        background-attachment: initial;
+    }
+    .padding-top-menu {
+        padding-top: 0;
+    }
+    .mobile-hide {
+        display: none;
+    }
+    .mobile-clearfloats {
+        clear: both;
+    }
+    .mobile-size1 {
+        height: 100px;
+    }
+    .mobile-size2 {
+        width: 100%;
+    }
+    .height-med2{
+        height: 28em;
+    }
+    .width-med1 {
+        width: 100%;
+    }
+    .font-2 { font-size: 1em; }
+    .font-3 { font-size: 1em; }
+    .font-size-bigger1{ font-size: 1em; }
+    .font-size-bigger2{ font-size: 1em; }
+    .font-size-bigger3{ font-size: 1.3em; }
+    .font-size-bigger4{ font-size: 1em; }
+    .font-size-bigger5{ font-size: 1.3em; }
+}

@@ -6,11 +6,11 @@
     <!-- # welcome image and logo -->
     <div class="container-fluid background-pic1">
         <div class="row justify-content-center padding-top-menu">
-            <img src="images/logo.png" class="img-responsive">
+            <img src="images/logo.png" class="img-responsive mobile-size1">
         </div>
     </div>
     <!-- # sections for services, gallery, promotions -->
-    <div class="container-fluid color-purple-bg py-4 px-4">
+    <div class="container-fluid color-purple-bg py-4 px-sm-4">
         <!-- ## description of services -->
         <div class="container color-grey2-bg align-center-text width-med1 py-4 mt-1 mb-4">
             <div class="font-2"> 
@@ -18,14 +18,14 @@
                 <p><em>Transforming your space<br>into the perfect venue.</em></p>
                 <p font-size-bigger3 font-2>It's what we do.</p>
             </div>
-                <img class="mb-4" src="images/tent_small.jpg">
+                <img class="mb-4 mobile-size2" src="images/tent_small.jpg">
             <p class="capitalize font-3">
-                Serving all of Utah County &amp; the Greater Salt Lake<br>
+                Serving all of Utah County &amp; the Greater Salt Lake
                 area, including Cache Valley &amp; Sanpete County 
             </p>
         </div>
         <!-- ## gallery and promotions -->
-        <div class="container-fluid px-2 pt-1 mb-4 background-split">
+        <div class="container-fluid px-2 pt-1 mb-4 background-split mobile-hide">
             <div class="container">
                 <!-- row for pictures -->
                 <div class="row">
@@ -70,11 +70,11 @@
         <div class="container color-grey2-bg width-med1 py-3">
             <!-- row for pictures -->
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-xs-12 col-sm-6">
                         <img src="images/drapery3.jpg" class="img-responsive width-full">
                         <!-- setting width to 100% fixes img-responsive bug -->
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-xs-12 col-sm-6">
                         <img src="images/drapery4.jpg" class="img-responsive width-full">
                     </div>
                 </div>
@@ -114,7 +114,7 @@
     <!-- # Review Slides -->
     <div id="reviewContainer" class="container-fluid">
         <!-- Arrow Left -->
-        <div class="float-left margin-left-big1 height-med2-padding">
+        <div class="float-left margin-left-big1 height-med2-padding mobile-hide">
             <svg viewbox="0 0 39 11" class="color-gold1-stroke width-med3 cursor-pointer" onclick="previousReview()">
                 <polygon points="
                     5.5,0
@@ -131,7 +131,7 @@
             </svg> 
         </div>
         <!-- Arrow Right -->
-        <div class="float-right margin-right-big1 height-med2-padding align-right-text">                    
+        <div class="float-right margin-right-big1 height-med2-padding align-right-text mobile-hide">                    
             <svg viewbox="0 0 39 11" class="color-gold1-stroke width-med3 cursor-pointer" onclick="nextReview()">
                 <polygon points="
                     33.5,0
